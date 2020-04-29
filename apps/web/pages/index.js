@@ -1,5 +1,11 @@
+import Typography from '@qrt/atoms/typography';
+
 function HomePage() {
-  return <div>Welcome to Quarentine-Bootstrap.js!</div>
+    return (
+        <div>
+            <Typography text="Welcome to Quarentine-Bootstrap.js!" />
+        </div>
+    );
 }
 
 export default HomePage;

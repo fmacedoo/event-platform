@@ -2,5 +2,10 @@
   "name": "@qrt/atoms",
   "version": "0.0.1",
   "description": "Atoms are the smallest parts",
-  "license": "ISC"
+  "license": "ISC",
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.12.0"
+  }
 }
