@@ -4,11 +4,17 @@
   "description": "Quarentine Project - BGM Hackaton",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lerna run --parallel dev"
   },
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  },
+  "private": true,
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "packages/*"
   ]
 }
