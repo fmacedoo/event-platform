@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "presentations",
+  "info": {
+    "name": "Presentation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "stars": {
+      "type": "decimal"
+    },
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "speaker": {
+      "model": "speaker"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/presentations",
+      "handler": "presentation.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/presentations/count",
+      "handler": "presentation.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/presentations/:id",
+      "handler": "presentation.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/presentations",
+      "handler": "presentation.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/presentations/:id",
+      "handler": "presentation.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/presentations/:id",
+      "handler": "presentation.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
