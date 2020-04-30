@@ -2,5 +2,8 @@
   "name": "@qrt/organisms",
   "version": "0.0.1",
   "description": "Organisms are the joining of molecules that join us life (pages as you've guessed it).",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@qrt/assets": "^0.0.1"
+  }
 }

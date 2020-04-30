@@ -1,0 +1,23 @@
+:root {
+    --spacer-xxs: 0.4rem;
+    --spacer-xs: 0.6rem;
+    --spacer-s: 1.2rem;
+    --spacer-m: 2.4rem;
+    --spacer-l: 4.8rem;
+    --spacer-xl: 9.6rem;
+    --container-max-width: 136rem;
+    --text-block-max-width: 78rem;
+    --anchor-max-width: 39rem;
+
+    --padding-y: 10rem;
+    --padding-x: 6rem;
+    --page-padding-x: 3rem;
+}
+
+@media (--max-layout-sm) {
+    :root {
+        --padding-y: 5rem;
+        --padding-x: 3rem;
+        --page-padding-x: 0;
+    }
+}

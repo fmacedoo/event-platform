@@ -2,5 +2,8 @@
   "name": "@qrt/molecules",
   "version": "0.0.1",
   "description": "Molecules are a joining of many atoms.",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@qrt/assets": "^0.0.1"
+  }
 }

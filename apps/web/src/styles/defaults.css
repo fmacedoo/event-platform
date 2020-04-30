@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+p,
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}

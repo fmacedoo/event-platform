@@ -1,4 +1,5 @@
 import Typography from '@qrt/atoms/typography';
+import { withLayout } from 'components/layout';
 
 function HomePage() {
     return (
@@ -8,4 +9,4 @@ function HomePage() {
     );
 }
 
-export default HomePage;
+export default withLayout(HomePage);

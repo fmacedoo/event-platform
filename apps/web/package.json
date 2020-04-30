@@ -8,14 +8,28 @@
     "start": "NODE_ENV=production nodemon --exec server bin/start"
   },
   "dependencies": {
+    "@qrt/assets": "^0.0.1",
     "@qrt/atoms": "^0.0.1",
     "@qrt/molecules": "^0.0.1",
     "@qrt/organisms": "^0.0.1",
+    "@zeit/next-css": "^1.0.1",
+    "autoprefixer": "^9.7.6",
     "express": "^4.17.1",
+    "file-loader": "^6.0.0",
     "next": "9.3.6",
     "next-routes": "^1.4.2",
+    "normalize.css": "^8.0.1",
+    "postcss-apply": "^0.12.0",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-custom-properties": "^9.1.1",
+    "postcss-extend": "^1.0.5",
+    "postcss-fontpath": "^1.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-mixins": "^6.2.3",
+    "postcss-nested": "^4.2.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "url-loader": "^4.1.0",
     "winston": "^3.2.1"
   }
 }

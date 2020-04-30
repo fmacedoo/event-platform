@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Roboto-Black';
+    font-weight: normal;
+    font-style: normal;
+    font-path: '@qrt/assets/fonts/Roboto-Black';
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    font-weight: normal;
+    font-style: normal;
+    font-path: '@qrt/assets/fonts/Roboto-Bold';
+}
+
+@font-face {
+    font-family: 'Roboto-Thin';
+    font-weight: normal;
+    font-style: normal;
+    font-path: '@qrt/assets/fonts/Roboto-Thin';
+}
+
+:root {
+    --roboto-black: 'Roboto-Black', sans-serif;
+    --roboto-bold: 'Roboto-Bold', sans-serif;
+    --roboto-bold: 'Roboto-Thin', sans-serif;
+}

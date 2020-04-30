@@ -1,0 +1,15 @@
+.layout {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .main {
+        background-color: var(--grey-light);
+    }
+
+    &.blur {
+        > *:not(:last-child) {
+            filter: blur(0.5rem);
+        }
+    }
+}

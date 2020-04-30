@@ -1,0 +1,11 @@
+{
+  "name": "@qrt/assets",
+  "version": "0.0.1",
+  "description": "Assets are the stuffs we care like fonts and icons.",
+  "license": "ISC",
+  "scripts": {},
+  "files": [
+    "fonts",
+    "fonts.css"
+  ]
+}
