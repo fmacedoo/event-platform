@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nodemon -w server bin/start",
     "build": "next build",
-    "start": "NODE_ENV=production nodemon -w server bin/start"
+    "start": "NODE_ENV=production node bin/start"
   },
   "dependencies": {
     "@qrt/assets": "^0.0.1",
