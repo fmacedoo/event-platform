@@ -34,6 +34,9 @@
     },
     "speaker": {
       "model": "speaker"
+    },
+    "tags": {
+      "type": "json"
     }
   }
 }

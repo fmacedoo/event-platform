@@ -44,10 +44,8 @@
     "email": {
       "type": "email"
     },
-    "events": {
-      "via": "sponsors",
-      "collection": "event",
-      "dominant": true
+    "tags": {
+      "type": "json"
     }
   }
 }
