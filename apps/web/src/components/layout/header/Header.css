@@ -1,0 +1,15 @@
+.header {
+    background-color: var(--grey-dark);
+    display: flex;
+    justify-content: center;
+
+    .content {
+        max-width: var(--max-width);
+        padding: 0 var(--spacer-s);
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+}

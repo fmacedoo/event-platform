@@ -5,6 +5,7 @@
 
     .main {
         background-color: var(--grey-light);
+        padding: 0 var(--spacer-s);
     }
 
     &.blur {
