@@ -7,6 +7,8 @@ const alias = require('./alias');
 
 const isProduction = process.env.NODE_ENV === 'production';
 
+const transpilePackages = ['@qrt/atoms', '@qrt/molecules', '@qrt/organisms', '@qrt/sdks'];
+
 const nextConfig = {
     cssModules: true,
     cssLoaderOptions: {
@@ -33,4 +35,4 @@ const nextConfig = {
     }
 };
 
-module.exports = withTM(['@qrt/atoms', '@qrt/molecules', '@qrt/organisms'])(withCSS(nextConfig));
+module.exports = withTM(transpilePackages)(withCSS(nextConfig));

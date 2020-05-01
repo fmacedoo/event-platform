@@ -1,0 +1,10 @@
+{
+  "name": "@qrt/sdks",
+  "version": "0.0.1",
+  "description": "SDKs means... you known!",
+  "license": "ISC",
+  "scripts": {},
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0"
+  }
+}
