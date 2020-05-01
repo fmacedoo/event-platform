@@ -1,0 +1,4 @@
+.sponsorCard{
+    display: flex;
+    flex-direction: column;
+}
