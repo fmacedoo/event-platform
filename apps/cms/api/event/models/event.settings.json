@@ -29,17 +29,20 @@
       "required": false
     },
     "startDate": {
-      "type": "datetime"
+      "type": "datetime",
+      "required": false
     },
     "endDate": {
       "type": "datetime"
     },
-    "sponsors": {
-      "collection": "sponsor",
-      "via": "events"
-    },
     "presentations": {
       "collection": "presentation"
+    },
+    "tags": {
+      "type": "json"
+    },
+    "sponsors": {
+      "collection": "sponsor"
     }
   }
 }
