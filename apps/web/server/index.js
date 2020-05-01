@@ -1,17 +1,17 @@
 const express = require('express');
 const createNext = require('next');
 
-const routes = require('./routes');
+const addNextRoutes = require('./next-routes');
 
 const dev = process.env.NODE_ENV !== 'production';
 
 module.exports = async () => {
-    const next = createNext({ dev });
     const app = express();
 
+    const next = createNext({ dev });
     await next.prepare();
 
-    app.get('*', routes.getRequestHandler(next));
+    addNextRoutes(app, next);
 
     return app;
 };

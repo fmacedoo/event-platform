@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "lerna run --parallel dev",
-    "build": "cd apps/$BUILD_APP && yarn build",
-    "start": "yarn build && cd apps/$BUILD_APP && yarn start"
+    "build": "cd apps/$APP && yarn build",
+    "start": "cd apps/$APP && yarn start"
   },
   "author": "",
   "license": "ISC",
