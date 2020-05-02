@@ -3,7 +3,6 @@ const express = require('express');
 const createNext = require('next');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
-const logger = require('../logger');
 const addNextRoutes = require('./next-routes');
 
 const dev = process.env.NODE_ENV !== 'production';
