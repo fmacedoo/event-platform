@@ -1,0 +1,9 @@
+.presentation {
+    display: flex;
+    flex-direction: column;
+}
+
+.presentationImage {
+    border-radius: 150px;
+
+}
