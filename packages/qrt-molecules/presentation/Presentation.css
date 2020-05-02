@@ -1,9 +1,9 @@
-.presentationCard {
+.presentation {
     display: flex;
     flex-direction: column;
 }
 
-.presentationCardImage {
+.presentationImage {
     border-radius: 150px;
 
 }
