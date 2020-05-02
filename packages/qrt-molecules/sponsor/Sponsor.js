@@ -1,5 +1,5 @@
-import React from 'react';
 import { string } from 'prop-types';
+import React from 'react';
 
 import Image from '@qrt/atoms/image';
 import Typography from '@qrt/atoms/typography';
