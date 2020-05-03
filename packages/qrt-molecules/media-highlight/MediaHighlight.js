@@ -2,17 +2,20 @@ import { string } from 'prop-types';
 import React from 'react';
 
 import { H4 } from '@qrt/atoms/typography';
-import Image from '@qrt/atoms/image';
+import Anchor from '@qrt/atoms/anchor';
 import Spacer from '@qrt/atoms/spacer';
 import Stamp from '@qrt/atoms/stamp';
 
 import Styles from './MediaHighlight.css';
 
-export default function MediaHighlight({ title, subtitle, image }) {
+export default function MediaHighlight({ title, subtitle, image, url }) {
+    const Wrapper = url ? Anchor : 'div';
     return (
-        <div
+        <Wrapper
             className={Styles.mediaHighlight}
             style={{ '--media-highlight-image': `url('${image}')` }}
+            href={url}
+            target="_blank"
         >
             <div className={Styles.info}>
                 <Stamp text={subtitle} />
@@ -25,7 +28,7 @@ export default function MediaHighlight({ title, subtitle, image }) {
                     transform="uppercase"
                 />
             </div>
-        </div>
+        </Wrapper>
     );
 }
 

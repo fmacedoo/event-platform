@@ -1,31 +1,17 @@
-import { func, string } from 'prop-types';
-import React, { useState } from 'react';
+import { string } from 'prop-types';
+import React from 'react';
 
-export const Image = ({ src, alt, fallback, ...props }) => {
-    const [error, setError] = useState(!src);
-    const [loaded, setLoaded] = useState(!src);
-
+export const Image = ({ src, alt, ...props }) => {
     return (
         <>
-            <img
-                {...props}
-                alt={alt}
-                src={src}
-                style={{
-                    display: (!loaded && src) || !src ? 'none' : 'block',
-                }}
-                onError={() => setError(true)}
-                onLoad={() => setLoaded(true)}
-            />
-            {(!loaded || error) && fallback && fallback()}
+            <img {...props} alt={alt} src={src} />
         </>
     );
 };
 
 Image.propTypes = {
     src: string,
-    alg: string,
-    fallback: func,
+    alt: string,
 };
 
 Image.defaultProps = {
