@@ -4,6 +4,7 @@
   "description": "Molecules are a joining of many atoms.",
   "license": "ISC",
   "dependencies": {
-    "@qrt/assets": "^0.0.1"
+    "@qrt/assets": "^0.0.1",
+    "@qrt/atoms": "^0.0.1"
   }
 }

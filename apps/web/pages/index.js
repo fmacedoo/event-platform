@@ -1,12 +1,15 @@
 import { withLayout } from 'components/layout';
 
-import Typography from '@qrt/atoms/typography';
 import Container from '@qrt/atoms/container';
+
+import Expositores from '@qrt/organisms/expositores';
+import Materias from '@qrt/organisms/materias';
 
 function HomePage() {
     return (
         <Container>
-            <Typography text="CONTENT" />
+            <Expositores />
+            <Materias />
         </Container>
     );
 }

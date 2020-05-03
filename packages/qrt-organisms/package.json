@@ -4,6 +4,8 @@
   "description": "Organisms are the joining of molecules that join us life (pages as you've guessed it).",
   "license": "ISC",
   "dependencies": {
-    "@qrt/assets": "^0.0.1"
+    "@qrt/assets": "^0.0.1",
+    "@qrt/atoms": "^0.0.1",
+    "@qrt/molecules": "^0.0.1"
   }
 }

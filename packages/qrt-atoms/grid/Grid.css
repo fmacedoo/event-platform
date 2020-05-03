@@ -1,0 +1,17 @@
+.grid {
+    --gap: 1rem;
+    --columns: 3;
+    --item-size: calc(calc(100% / var(--columns)) - var(--gap));
+    margin-right: calc(var(--gap) * -1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    > * {
+        width: 100%;
+        max-width: var(--item-size);
+        margin-right: var(--gap);
+        margin-bottom: var(--gap);
+        flex-grow: 1;
+    }
+}

@@ -2,11 +2,13 @@
     background-color: var(--grey-dark);
     display: flex;
     justify-content: center;
+    width: 100%;
+    position: fixed;
 
     .content {
         max-width: var(--max-width);
         padding: 0 var(--spacer-s);
-        height: 6rem;
+        height: var(--header-height);
         display: flex;
         align-items: center;
         justify-content: space-between;
