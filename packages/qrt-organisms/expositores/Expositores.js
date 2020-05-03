@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { H4 } from '@qrt/atoms/typography';
-import ContainerBox from '@qrt/atoms/container-box';
+import Container from '@qrt/atoms/container';
 import Grid from '@qrt/atoms/grid';
 import Spacer from '@qrt/atoms/spacer';
 
@@ -16,7 +16,7 @@ const mock = new Array(8).fill({}).map(o => ({
 
 export default function Expositores({ items = mock }) {
     return (
-        <ContainerBox>
+        <Container box>
             <H4 text="Expositores" />
             <Spacer size="l" />
             <SectionTitle />
@@ -24,6 +24,6 @@ export default function Expositores({ items = mock }) {
             <Grid items={items} columns={4} gap={4}>
                 {(item, i) => <Media {...item} />}
             </Grid>
-        </ContainerBox>
+        </Container>
     );
 }

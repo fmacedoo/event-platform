@@ -21,3 +21,7 @@ Stamp.propTypes = {
     text: string,
     size: string,
 };
+
+Stamp.defaultProps = {
+    size: 's',
+};

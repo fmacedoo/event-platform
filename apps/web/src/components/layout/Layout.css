@@ -6,7 +6,6 @@
     .main {
         background-color: var(--grey-light);
         margin-top: var(--header-height);
-        padding: 0 var(--spacer-s);
     }
 
     &.blur {
