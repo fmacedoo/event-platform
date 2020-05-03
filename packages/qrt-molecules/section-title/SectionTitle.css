@@ -1,0 +1,7 @@
+.sectionTitle {
+    border-bottom: 0.1rem solid var(--grey);
+    padding-bottom: var(--spacer-s);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

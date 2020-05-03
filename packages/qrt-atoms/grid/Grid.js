@@ -8,22 +8,31 @@ export const Grid = ({
     className,
     items = [],
     columns,
+    gap,
     children,
     dataTest,
-}) => (
-    <div
-        className={cx(Styles.grid, className)}
-        data-testid={dataTest}
-        style={columns && { '--columns': columns }}
-    >
-        {items.map(children)}
-    </div>
-);
+}) => {
+    const styles = [
+        columns && { '--columns': columns },
+        gap && { '--gap': `${gap}rem` },
+    ].reduce((ac, c) => ({ ...ac, ...c }), {});
+
+    return (
+        <div
+            className={cx(Styles.grid, className)}
+            data-testid={dataTest}
+            style={styles}
+        >
+            {items.map(children)}
+        </div>
+    );
+}
 
 Grid.propTypes = {
     children: func.isRequired,
     items: array,
     columns: number,
+    gap: number,
     className: string,
     dataTest: string,
 };

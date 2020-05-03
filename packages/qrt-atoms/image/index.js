@@ -1,3 +1,3 @@
-import SingleImage from './Image';
+import Image from './Image';
 
-export default SingleImage;
+export default Image;

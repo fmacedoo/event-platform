@@ -1,0 +1,23 @@
+.spacer-xxs {
+    height: var(--spacer-xxs);
+}
+
+.spacer-xs {
+    height: var(--spacer-xs);
+}
+
+.spacer-s {
+    height: var(--spacer-s);
+}
+
+.spacer-m {
+    height: var(--spacer-m);
+}
+
+.spacer-l {
+    height: var(--spacer-l);
+}
+
+.spacer-xl {
+    height: var(--spacer-xl);
+}

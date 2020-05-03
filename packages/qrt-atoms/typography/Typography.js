@@ -1,7 +1,7 @@
 import { bool, node, oneOf, oneOfType, string } from 'prop-types';
 
-import Styles from './Typography.css';
 import cx from 'classnames';
+import Styles from './Typography.css';
 
 const FONTS = {
     bold: Styles.bold,
@@ -10,8 +10,9 @@ const FONTS = {
 };
 const COLORS = {
     black: Styles.black,
-    gray: Styles.gray,
+    orange: Styles.orange,
     white: Styles.white,
+    grey: Styles.grey,
 };
 const ALIGN = {
     left: Styles.left,
@@ -46,8 +47,8 @@ const SIZES = {
     xs: Styles['xs'],
 };
 const UNDERLINE = {
-    default: Styles['underline'],
-    hover: Styles['underlineHover'],
+    default: Styles.underline,
+    hover: Styles.underlineHover,
 };
 
 export default function Typography({

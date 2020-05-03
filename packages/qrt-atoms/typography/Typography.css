@@ -143,8 +143,13 @@ label.typography {
         --color: var(--white);
     }
 
-    &.gray {
-        --color: var(--grey-medium-dark);
+    &.grey {
+        --color: var(--grey);
+    }
+
+
+    &.orange {
+        --color: var(--orange);
     }
 
     &.center {
