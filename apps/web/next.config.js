@@ -7,13 +7,20 @@ const alias = require('./alias');
 
 const isProduction = process.env.NODE_ENV === 'production';
 
-const transpilePackages = ['@qrt/atoms', '@qrt/molecules', '@qrt/organisms', '@qrt/sdks'];
+const transpilePackages = [
+    '@qrt/atoms',
+    '@qrt/molecules',
+    '@qrt/organisms',
+    '@qrt/sdks',
+];
 
 const nextConfig = {
     cssModules: true,
     cssLoaderOptions: {
         importLoaders: 1,
-        localIdentName: isProduction ? '[hash:base64:5]' : '[local]___[hash:base64:5]',
+        localIdentName: isProduction
+            ? '[hash:base64:5]'
+            : '[local]___[hash:base64:5]',
     },
     webpack(config) {
         Object.keys(alias).map(

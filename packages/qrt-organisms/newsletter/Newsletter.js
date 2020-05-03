@@ -1,17 +1,18 @@
+import { string } from 'prop-types';
 import React from 'react';
 
 import { Span } from '@qrt/atoms/typography';
 import Button from '@qrt/atoms/button';
+import Field from '@qrt/atoms/field/Field';
 import Image from '@qrt/atoms/image';
 import Spacer from '@qrt/atoms/spacer';
 import TextBlock from '@qrt/atoms/text-block';
 
 import Styles from './Newsletter.css';
-import Field from '@qrt/atoms/field/Field';
 
-export default function Newsletter() {
+export default function Newsletter({ id }) {
     return (
-        <div className={Styles.newsletter}>
+        <div id={id} className={Styles.newsletter}>
             <div className={Styles.announce}>
                 <div className={Styles.column}>
                     <Span text="Assine" color="white" font="bold" size="2xl" />
@@ -54,3 +55,7 @@ export default function Newsletter() {
         </div>
     )
 }
+
+Newsletter.propTypes = {
+    id: string,
+};

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Span } from '@qrt/atoms/typography';
-import { Anchor } from '@qrt/atoms/anchor/Anchor';
+import Anchor from '@qrt/atoms/anchor';
 
 import Styles from './SectionTitle.css';
 

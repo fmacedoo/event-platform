@@ -8,10 +8,10 @@ import Videos from '@qrt/organisms/videos';
 function HomePage() {
     return (
         <>
-            <Expositores />
-            <Materias />
-            <Newsletter />
-            <Videos />
+            <Expositores id="expositores" />
+            <Materias id="materias" />
+            <Newsletter id="newsletter" />
+            <Videos id="videos" />
         </>
     );
 }

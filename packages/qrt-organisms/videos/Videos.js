@@ -1,3 +1,4 @@
+import { string } from 'prop-types';
 import React from 'react';
 
 import { H4 } from '@qrt/atoms/typography';
@@ -15,16 +16,20 @@ const mock = new Array(8).fill({}).map(o => ({
     title: 'Palestrante',
 }));
 
-export default function Videos({ items = mock }) {
+export default function Videos({ id, items = mock }) {
     return (
-        <Container box black>
-            <H4 text="Videos" color="white" />
+        <Container box black id={id}>
+            <H4 text="Videos" color="orange" />
             <Spacer size="l" />
             <SectionTitle />
             <Spacer size="l" />
             <Grid items={items} columns={4} gap={4}>
-                {(item, i) => <Media fontColor="white" {...item} />}
+                {(item, i) => <Media key={i} fontColor="white" {...item} />}
             </Grid>
         </Container>
     );
 }
+
+Videos.propTypes = {
+    id: string,
+};

@@ -1,15 +1,22 @@
 .menu {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: flex-end;
-    width: 60%;
 
-    > * {
-        padding-right: 1rem;
+    > .item {
+        margin: 0 1rem;
+
+        &:last-child {
+            margin-left: 2rem;
+        }
     }
 
-    a :hover {
-        border-bottom: 0.2rem solid var(--black);
+    .anchor {
+        border-bottom: 0.2rem solid transparent;
+
+        &:hover {
+            border-bottom: 0.2rem solid var(--black);
+        }
     }
 }
 

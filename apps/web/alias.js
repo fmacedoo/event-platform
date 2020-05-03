@@ -1,7 +1,7 @@
 module.exports = {
     components: 'src/components',
     styles: 'src/styles',
+    shared: 'src/shared',
     context: 'src/context',
     server: 'server',
-    '@qrt/atoms/anchor/link': 'src/components/link',
 };

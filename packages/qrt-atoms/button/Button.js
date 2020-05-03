@@ -8,11 +8,17 @@ import Styles from './Button.css';
 
 const cx = classnames.bind(Styles);
 
-export default function Button({ text, large, typography, onClick }) {
+export default function Button({
+    className,
+    text,
+    large,
+    typography,
+    onClick,
+}) {
     return (
         <button
             type="button"
-            className={cx(Styles.button, { large: !!large })}
+            className={cx(Styles.button, className, { large: !!large })}
             onClick={onClick}
         >
             <Typography text={text} size="s" font="condensed" {...typography} />
@@ -21,6 +27,7 @@ export default function Button({ text, large, typography, onClick }) {
 }
 
 Button.propTypes = {
+    className: string,
     text: string,
     large: bool,
     onClick: func,

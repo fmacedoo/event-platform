@@ -6,9 +6,9 @@ import Styles from './Container.css';
 
 const cx = classnames.bind(Styles);
 
-export default function Container({ black, box, children }) {
+export default function Container({ id, black, box, children }) {
     return (
-        <div className={cx(Styles.container, { black: !!black })}>
+        <div id={id} className={cx(Styles.container, { black: !!black })}>
             {(box && <div className={Styles.box}>{children}</div>) || children}
         </div>
     );
