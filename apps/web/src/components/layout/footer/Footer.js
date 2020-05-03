@@ -1,3 +1,4 @@
+import Image from '@qrt/atoms/image';
 import Menu from '@qrt/molecules/menu';
 
 import Styles from './Footer.css';
@@ -8,6 +9,7 @@ export default function Footer() {
     return (
         <div className={Styles.footer}>
             <div className={Styles.content}>
+                <Image className={Styles.logo} src={mockUrl} />
                 <Menu logo={mockUrl} />
             </div>
         </div>
