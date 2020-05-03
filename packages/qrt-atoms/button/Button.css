@@ -1,14 +1,20 @@
-.button{
+.button {
     background-color: var(--black);
     color: var(--white);
     border-radius: 2rem;
     border: none;
     padding: 0.3rem 1.8rem;
     cursor: pointer;
+    outline: 0;
+
+    &.large {
+        min-height: 6rem;
+        min-width: 18rem;
+        border-radius: 6rem;
+    }
 }
+
 .button:hover {
-    /* background-color: #505050;
-    color: #bbb6b6; */
     background-color: var(--white);
     color: var(--black);
 }

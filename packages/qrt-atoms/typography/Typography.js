@@ -37,6 +37,7 @@ const VARIANTS = {
     default: { tag: 'span' },
 };
 const SIZES = {
+    '8xl': Styles['xxxxxxxxl'],
     '4xl': Styles['xxxxl'],
     '3xl': Styles['xxxl'],
     '2xl': Styles['xxl'],

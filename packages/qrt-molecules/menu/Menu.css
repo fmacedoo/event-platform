@@ -5,11 +5,11 @@
     width: 60%;
 
     > * {
-        padding-right: 1em;
+        padding-right: 1rem;
     }
 
     a :hover {
-        border-bottom: 2px solid var(--white);
+        border-bottom: 0.2rem solid var(--black);
     }
 }
 

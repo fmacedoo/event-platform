@@ -12,6 +12,7 @@
     .box {
         color: var(--black);
         max-width: var(--max-width);
+        padding: 0 var(--spacer-s);
         margin: 0 auto;
     }
 }

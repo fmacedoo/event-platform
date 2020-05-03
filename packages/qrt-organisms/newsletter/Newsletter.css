@@ -1,0 +1,28 @@
+.newsletter {
+    display: flex;
+
+    > div {
+        flex-grow: 1;
+
+        .column {
+            max-width: calc(var(--max-width) / 2);
+            flex-grow: 1;
+            padding: var(--spacer-m) 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .announce {
+        background-color: var(--orange);
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .form {
+        background-color: var(--grey-dark);
+        display: flex;
+    }
+}

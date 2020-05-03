@@ -1,0 +1,25 @@
+.textBlock {
+    max-width: calc(var(--max-width) / 4);
+    margin: 0 auto;
+    word-break: keep-all;
+
+    &.start {
+        text-align: start;
+    }
+
+    &.center {
+        text-align: center;
+    }
+
+    &.justify {
+        text-align: justify;
+    }
+
+    &.end {
+        text-align: end;
+    }
+
+    & > *:not(:last-child) {
+        margin-bottom: var(--spacer-m);
+    }
+}

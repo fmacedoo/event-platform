@@ -1,0 +1,14 @@
+.field {
+    color: var(--white);
+    background-color: var(--black);
+    border: none;
+    height: 5rem;
+    min-width: 40rem;
+    border-radius: 1rem;
+    padding: 1.5rem 3rem;
+    outline: 0;
+
+    &::placeholder {
+        color: var(--white);
+    }
+}

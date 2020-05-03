@@ -18,6 +18,10 @@ h5,
 h6,
 span {
     &.typography {
+        &.xxxxxxxxl {
+            font-size: var(--size-8xl);
+        }
+
         &.xxxxl {
             font-size: var(--size-4xl);
         }
@@ -120,6 +124,7 @@ label.typography {
 }
 
 .typography {
+    --size-8xl: 8rem;
     --size-4xl: 4rem;
     --size-3xl: 3.5rem;
     --size-2xl: 2.6rem;
@@ -174,6 +179,7 @@ label.typography {
 
 @media (--max-layout-xs) {
     .typography {
+        --size-8xl: 6rem;
         --size-4xl: 3rem;
         --size-3xl: 2.2rem;
         --size-2xl: 2rem;
