@@ -3,6 +3,7 @@ import { withLayout } from 'components/layout';
 import Expositores from '@qrt/organisms/expositores';
 import Materias from '@qrt/organisms/materias';
 import Newsletter from '@qrt/organisms/newsletter';
+import Videos from '@qrt/organisms/videos';
 
 function HomePage() {
     return (
@@ -10,6 +11,7 @@ function HomePage() {
             <Expositores />
             <Materias />
             <Newsletter />
+            <Videos />
         </>
     );
 }
