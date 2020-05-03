@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import { string } from 'prop-types';
 import React from 'react';
 
@@ -6,12 +5,12 @@ import { Span } from '@qrt/atoms/typography';
 
 import Styles from './Stamp.css';
 
-export default function Stamp({ text }) {
+export default function Stamp({ text, size }) {
     return (
         <Span
             className={Styles.stamp}
             font="condensed"
-            size="xs"
+            size={size}
             color="white"
             text={text}
         />
@@ -20,4 +19,5 @@ export default function Stamp({ text }) {
 
 Stamp.propTypes = {
     text: string,
+    size: string,
 };

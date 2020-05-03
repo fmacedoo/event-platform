@@ -14,4 +14,16 @@
         justify-content: space-between;
         flex-grow: 1;
     }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 60%;
+
+        > * {
+            padding-right: 1em;
+        }
+    }
+
 }

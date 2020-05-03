@@ -1,7 +1,3 @@
-import AnchorComponent from './Anchor';
+import Anchor from './Anchor';
 
-import withNavigationLink from './withNavigationLink';
-
-export const Anchor = AnchorComponent;
-
-export default withNavigationLink(AnchorComponent);
+export default Anchor;
