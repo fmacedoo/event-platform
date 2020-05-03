@@ -1,0 +1,11 @@
+.materias {
+    display: flex;
+    margin-left: calc(var(--spacer-l) * -1);
+
+    .materia {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        margin-left: var(--spacer-l);
+    }
+}

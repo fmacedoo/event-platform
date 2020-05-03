@@ -4,6 +4,7 @@
     justify-content: center;
     width: 100%;
     position: fixed;
+    z-index: 5;
 
     .content {
         max-width: var(--max-width);

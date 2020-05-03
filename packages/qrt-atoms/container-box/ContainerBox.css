@@ -1,11 +1,5 @@
 .containerBox {
     text-align: center;
     color: var(--black);
-    background-color: var(--white);
-    padding: var(--spacer-m) 0;
-
-    &.black {
-        color: var(--white);
-        background-color: var(--black);
-    }
+    max-width: var(--max-width);
 }

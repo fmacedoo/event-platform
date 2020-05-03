@@ -1,6 +1,5 @@
 .stamp {
-    background: #ff5319;
-    font-weight: 400;
-    padding: 6px 12px;
-    border-radius: 15px;
+    background: var(--orange);
+    padding: 0.6rem 1.2rem;
+    border-radius: 1.5rem;
 }
