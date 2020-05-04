@@ -7,11 +7,8 @@ import Newsletter from '@qrt/organisms/newsletter';
 import Videos from '@qrt/organisms/videos';
 import LiveVideo from '@qrt/organisms/live-video';
 
-async function fetchFromCMS(api) {
-    return api.content.events.get();
-}
-async function fetchNews(api) {
-    return api.content.news.get();
+function fetchFromCMS(api) {
+    return Promise.all([api.content.events.get(), api.content.news.get()]);
 }
 
 const defaultNews = {
@@ -34,7 +31,6 @@ function HomePage({ event, news }) {
         second: materias.shift() || defaultNews,
         third: materias.shift() || defaultNews,
     };
-
 
     const sponsors = event.sponsors.map(o => ({
         image: o.imageUrl,
@@ -62,11 +58,9 @@ function HomePage({ event, news }) {
 }
 
 HomePage.getInitialProps = async ({ api }) => {
+    const [events, news] = await fetchFromCMS(api);
 
-    const events = await fetchFromCMS(api);
-    const news = await fetchNews(api);
-
-    const event = events[0];
+    const event = events.shift();
 
     return {
         event,

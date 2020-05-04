@@ -13,7 +13,7 @@ export default function Media({ title, subtitle, image, url, fontColor }) {
 
     return (
         <div className={Styles.media}>
-            <Anchor onClick={handleClick}>
+            <Anchor className={Styles.anchor} onClick={handleClick}>
                 <Image className={Styles.image} src={image} />
             </Anchor>
             <Span text={title} size="l" color="orange" />
