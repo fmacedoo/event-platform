@@ -19,7 +19,7 @@ const mock = new Array(8).fill({}).map(o => ({
 export default function Videos({ id, items = mock }) {
     return (
         <Container box black id={id}>
-            <H4 text="Videos" color="orange" />
+            <H4 text="Palestras" color="orange" />
             <Spacer size="l" />
             <SectionTitle />
             <Spacer size="l" />

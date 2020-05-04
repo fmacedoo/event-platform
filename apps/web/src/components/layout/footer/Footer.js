@@ -6,7 +6,7 @@ import Menu from '@qrt/molecules/menu';
 
 import Styles from './Footer.css';
 
-const mockUrl = '/logo.png';
+const mockUrl = '/logofooter.png';
 
 export default function Footer() {
     return (

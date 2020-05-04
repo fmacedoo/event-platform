@@ -8,6 +8,9 @@ import Videos from '@qrt/organisms/videos';
 import LiveVideo from '@qrt/organisms/live-video';
 
 async function fetchFromCMS(api) {
+    return api.content.events.by(2).get();
+}
+async function fetchNews(api) {
     return api.content.news.get();
 }
 
@@ -18,7 +21,7 @@ const defaultNews = {
     title: 'Saiba mais sobre os food services',
 };
 
-function HomePage({ news }) {
+function HomePage({ event, news }) {
     const materias = news.map(o => ({
         image: o.img,
         title: o.title,
@@ -32,21 +35,41 @@ function HomePage({ news }) {
         third: materias.shift() || defaultNews,
     };
 
+
+    const sponsors = event.sponsors.map(o => ({
+        image: o.imageUrl,
+        subtitle: o.tags,
+        title: o.name,
+        url: o.url,
+    }));
+
+    const presentations = event.presentations.map(o => ({
+        image: o.thumbUrl,
+        subtitle: o.title,
+        title: o.tags,
+        url: o.url,
+    }));
+
     return (
         <>
-            <Expositores id="expositores" />
+            <Expositores id="expositores" items={sponsors} />
             <Materias id="materias" {...selectedMaterias} />
             <Newsletter id="newsletter" />
             <LiveVideo id="live-video" />
-            <Videos id="videos" />
+            <Videos id="videos" items={presentations} />
         </>
     );
 }
 
 HomePage.getInitialProps = async ({ api }) => {
-    const news = await fetchFromCMS(api);
+
+    const events = await fetchFromCMS(api);
+    const news = await fetchNews(api);
+
+    const event = events || events[0];
 
     return {
+        event,
         news,
     };
 };

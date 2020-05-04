@@ -16,7 +16,7 @@ const mock = new Array(8).fill({}).map(o => ({
     title: 'Expositor',
 }));
 
-export default function Expositores({ id, items = mock }) {
+export default function Expositores({ id, items }) {
     return (
         <Container box id={id}>
             <H4 text="Expositores" />

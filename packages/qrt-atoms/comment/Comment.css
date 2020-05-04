@@ -1,6 +1,6 @@
 .comment{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     padding: 0.2em;
 
     > span:first-child {

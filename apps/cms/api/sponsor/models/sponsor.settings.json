@@ -45,7 +45,10 @@
       "type": "email"
     },
     "tags": {
-      "type": "json"
+      "type": "string"
+    },
+    "imageUrl": {
+      "type": "string"
     }
   }
 }

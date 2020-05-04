@@ -36,7 +36,10 @@
       "model": "speaker"
     },
     "tags": {
-      "type": "json"
+      "type": "string"
+    },
+    "thumbUrl": {
+      "type": "string"
     }
   }
 }

@@ -6,13 +6,15 @@ import Button from '@qrt/atoms/button';
 
 import Styles from './comments.css';
 
+const names = ["Thiago Ramalho", "Felipe Macedo", "Bruno Windrop", "Lee Majors"];
+const description = ['Palestra muito boa!! Parabéns', 'Tá interassante', 'vc vai falar sobre delivery?', 'Quando vai ser a próxima?']
+
 const mock = new Array(5).fill({}).map((o, i) => ({
     id: i,
     image:
         'https://s2.glbimg.com/FdHDOZkFfz75c7TCpcgtjrwwJGE=/408x324/smart/e.glbimg.com/og/ed/f/original/2019/02/05/gustavo.png',
-    name: 'Thiago Ramalho',
-    comment:
-        'This is my best comment in this video This is my best comment in this video',
+    name: names[Math.floor(Math.random() * names.length)],
+    comment: description[Math.floor(Math.random() * description.length)],
 }));
 
 export default function Comments() {

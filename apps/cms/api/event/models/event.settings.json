@@ -38,9 +38,6 @@
     "presentations": {
       "collection": "presentation"
     },
-    "tags": {
-      "type": "json"
-    },
     "sponsors": {
       "collection": "sponsor"
     }
