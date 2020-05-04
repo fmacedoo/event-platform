@@ -5,7 +5,6 @@ import { H4 } from '@qrt/atoms/typography';
 import Container from '@qrt/atoms/container';
 import Spacer from '@qrt/atoms/spacer';
 
-import Media from '@qrt/molecules/media';
 import MediaHighlight from '@qrt/molecules/media-highlight/MediaHighlight';
 import SectionTitle from '@qrt/molecules/section-title';
 
