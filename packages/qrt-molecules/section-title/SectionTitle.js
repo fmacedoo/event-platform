@@ -5,14 +5,14 @@ import Anchor from '@qrt/atoms/anchor';
 
 import Styles from './SectionTitle.css';
 
-export default function SectionTitle() {
+export default function SectionTitle({ title, more }) {
     return (
         <div className={Styles.sectionTitle}>
-            <Span text="Apoie o negócio local" color="grey" />
+            <Span text={title} color="grey" font="bold" />
             <Anchor
-                text="Conheça mais ideias"
+                text={more}
                 href="http://www.google.com.br/"
-                typography={{ color: 'orange' }}
+                typography={{ color: 'orange', font: 'bold' }}
             />
         </div>
     )

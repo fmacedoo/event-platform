@@ -1,9 +1,9 @@
 @import '@qrt/assets/fonts.css';
 
 :root {
-    --font-main: var(--roboto-black);
-    --font-bold: var(--roboto-bold);
-    --font-thin: var(--roboto-thin);
+    --font-main: var(--montserrat-regular);
+    --font-bold: var(--montserrat-bold);
+    --font-thin: var(--montserrat-thin);
 }
 
 body {

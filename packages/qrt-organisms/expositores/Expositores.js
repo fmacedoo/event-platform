@@ -21,7 +21,10 @@ export default function Expositores({ id, items = mock }) {
         <Container box id={id}>
             <H4 text="Expositores" />
             <Spacer size="l" />
-            <SectionTitle />
+            <SectionTitle
+                title="Apoie o negócio local"
+                more="Conheça mais ideias"
+            />
             <Spacer size="l" />
             <Grid items={items} columns={4} gap={4}>
                 {(item, i) => <Media key={i} {...item} />}

@@ -24,9 +24,9 @@ export default function Newsletter({ id }) {
                         size="l"
                     />
                     <div>
-                        <Span text="R$" color="black" size="2xl" />
-                        <Span text="1,99" color="black" size="8xl" />
-                        <Span text="/mês" color="black" size="2xl" />
+                        <Span text="R$" color="black" size="2xl" font="bold" />
+                        <Span text="1,99" color="black" size="8xl" font="bold" />
+                        <Span text="/mês" color="black" size="2xl" font="bold" />
                     </div>
                     <div>
                         <Span text="por " color="white" />
@@ -42,6 +42,7 @@ export default function Newsletter({ id }) {
                         <Span
                             text="Assine a nossa newsletter e assista à palestras gratuitamente."
                             size="2xl"
+                            font="bold"
                         />
                     </TextBlock>
                     <Spacer size="m" />

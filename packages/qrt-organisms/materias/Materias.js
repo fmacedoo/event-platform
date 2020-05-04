@@ -15,7 +15,10 @@ export default function Materias({ id, first, second, third }) {
         <Container black box id={id}>
             <H4 text="Materias" color="orange" />
             <Spacer size="l" />
-            <SectionTitle />
+            <SectionTitle
+                title="Atulize-se em relação ao mercado"
+                more="Veja mais matérias"
+            />
             <Spacer size="l" />
             <div className={Styles.materias}>
                 <div className={Styles.materia}>
