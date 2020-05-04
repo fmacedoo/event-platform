@@ -5,6 +5,7 @@ import Expositores from '@qrt/organisms/expositores';
 import Materias from '@qrt/organisms/materias';
 import Newsletter from '@qrt/organisms/newsletter';
 import Videos from '@qrt/organisms/videos';
+import LiveVideo from '@qrt/organisms/live-video';
 
 async function fetchFromCMS(api) {
     return api.content.news.get();
@@ -36,6 +37,7 @@ function HomePage({ news }) {
             <Expositores id="expositores" />
             <Materias id="materias" {...selectedMaterias} />
             <Newsletter id="newsletter" />
+            <LiveVideo id="live-video" />
             <Videos id="videos" />
         </>
     );

@@ -1,0 +1,18 @@
+.containerPlay{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-height: 20em;
+
+    > div {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        margin-left: var(--spacer-l);
+    }
+
+    > div:last-child{
+        background-color: #f9f9f9;
+    }
+}
+

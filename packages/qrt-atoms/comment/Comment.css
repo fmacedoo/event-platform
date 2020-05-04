@@ -1,0 +1,26 @@
+.comment{
+    display: flex;
+    justify-content: center;
+    padding: 0.2em;
+
+    > span:first-child {
+        padding-right: 1em;
+    }
+
+    > span:last-child {
+        text-align: left;
+        white-space: pre-wrap;
+    }
+
+    .image {
+        height: 1.5em;
+        width: 1.5em;
+        border-radius: 50%;
+    }
+
+    .content > :first-child {
+        padding-right: 1em;
+    }
+}
+
+
