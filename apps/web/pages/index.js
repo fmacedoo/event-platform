@@ -8,7 +8,7 @@ import Videos from '@qrt/organisms/videos';
 import LiveVideo from '@qrt/organisms/live-video';
 
 async function fetchFromCMS(api) {
-    return api.content.events.by(2).get();
+    return api.content.events.get();
 }
 async function fetchNews(api) {
     return api.content.news.get();
@@ -66,7 +66,7 @@ HomePage.getInitialProps = async ({ api }) => {
     const events = await fetchFromCMS(api);
     const news = await fetchNews(api);
 
-    const event = events || events[0];
+    const event = events[0];
 
     return {
         event,

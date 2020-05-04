@@ -3,5 +3,6 @@ export default client => {
         by: id => ({
             get: () => client.get(`/events/${id}`),
         }),
+        get: () => client.get(`/events/`),
     };
 };
