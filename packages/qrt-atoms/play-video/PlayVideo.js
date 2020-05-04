@@ -2,15 +2,10 @@ import React from 'react';
 
 export default function PlayVideo() {
     return (
-        <div>
-            <iframe
-                title="play"
-                width="660"
-                height="415"
-                src="https://www.youtube.com/embed/1oef_zXhPgA"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            />
+        <div class="iframe">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nDVFSic7R_w/?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            </div>
         </div>
     );
 }
