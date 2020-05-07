@@ -9,7 +9,6 @@
     .content {
         max-width: var(--max-width);
         padding: 0 var(--spacer-s);
-        height: var(--header-height);
         display: flex;
         align-items: center;
         justify-content: space-between;

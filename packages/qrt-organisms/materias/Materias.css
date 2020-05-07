@@ -1,8 +1,11 @@
 .materias {
     display: flex;
     margin-left: calc(var(--spacer-l) * -1);
+    flex-wrap: wrap;
+
 
     .materia {
+        min-width: 300px;
         display: flex;
         flex-grow: 1;
         flex-direction: column;

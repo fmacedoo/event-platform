@@ -1,4 +1,24 @@
 .grid {
+    --gap: 3rem;
+    --columns: 3;
+    --item-size: calc(calc(100% / var(--columns)) - var(--gap));
+
+    width:100%;
+    display: grid;
+    grid-gap: var(--gap);
+    grid-template-columns: repeat(auto-fit, 300px);
+
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    justify-content: center;
+    justify-items: center;
+
+
+  }
+
+.grid > * {
+
+}
+/* .grid {
     --gap: 1rem;
     --columns: 3;
     --item-size: calc(calc(100% / var(--columns)) - var(--gap));
@@ -14,4 +34,4 @@
         margin-bottom: var(--gap);
         flex-grow: 1;
     }
-}
+} */
