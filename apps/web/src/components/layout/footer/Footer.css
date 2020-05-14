@@ -3,6 +3,8 @@
     color: var(--white);
     display: flex;
     justify-content: center;
+    width: 100%;
+
 
     .content {
         max-width: var(--max-width);
